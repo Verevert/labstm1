@@ -32,7 +32,6 @@ int main(void) {
 
     GPIOA->MODER &= ~GPIO_MODER_MODE0;
     GPIOA->PUPDR |= GPIO_PUPDR_PUPD0_1;
-    while (1)
         while (1) {
             if (GPIOA->IDR & GPIO_IDR_ID0) {
                 for (uint32_t led = 0x1000; led <= 0x8000; led <<= 1) {
