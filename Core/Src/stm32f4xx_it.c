@@ -211,7 +211,7 @@ void TIM2_IRQHandler(void)
   /* USER CODE END TIM2_IRQn 0 */
   HAL_TIM_IRQHandler(&htim2);
   /* USER CODE BEGIN TIM2_IRQn 1 */
-  HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_12);
+  HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_13);
   /* USER CODE END TIM2_IRQn 1 */
 }
 
@@ -225,7 +225,7 @@ void TIM3_IRQHandler(void)
   /* USER CODE END TIM3_IRQn 0 */
   HAL_TIM_IRQHandler(&htim3);
   /* USER CODE BEGIN TIM3_IRQn 1 */
-  HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_13);
+  HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_12);
 
   /* USER CODE END TIM3_IRQn 1 */
 }
