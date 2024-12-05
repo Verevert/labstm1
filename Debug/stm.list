@@ -1446,8 +1446,8 @@ void TIM2_IRQHandler(void)
  8000a5c:	4804      	ldr	r0, [pc, #16]	; (8000a70 <TIM2_IRQHandler+0x18>)
  8000a5e:	f001 f8ef 	bl	8001c40 <HAL_TIM_IRQHandler>
   /* USER CODE BEGIN TIM2_IRQn 1 */
-  HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_12);
- 8000a62:	f44f 5180 	mov.w	r1, #4096	; 0x1000
+  HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_13);
+ 8000a62:	f44f 5100 	mov.w	r1, #8192	; 0x2000
  8000a66:	4803      	ldr	r0, [pc, #12]	; (8000a74 <TIM2_IRQHandler+0x1c>)
  8000a68:	f000 fbab 	bl	80011c2 <HAL_GPIO_TogglePin>
   /* USER CODE END TIM2_IRQn 1 */
@@ -1473,8 +1473,8 @@ void TIM3_IRQHandler(void)
  8000a7c:	4804      	ldr	r0, [pc, #16]	; (8000a90 <TIM3_IRQHandler+0x18>)
  8000a7e:	f001 f8df 	bl	8001c40 <HAL_TIM_IRQHandler>
   /* USER CODE BEGIN TIM3_IRQn 1 */
-  HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_13);
- 8000a82:	f44f 5100 	mov.w	r1, #8192	; 0x2000
+  HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_12);
+ 8000a82:	f44f 5180 	mov.w	r1, #4096	; 0x1000
  8000a86:	4803      	ldr	r0, [pc, #12]	; (8000a94 <TIM3_IRQHandler+0x1c>)
  8000a88:	f000 fb9b 	bl	80011c2 <HAL_GPIO_TogglePin>
 
